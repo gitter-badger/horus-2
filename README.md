@@ -9,4 +9,4 @@ Click-driven monetization, along with other factors, seems to be creating econom
 **Horus's goal is to help people filter the truth out of uncertaincy.**
 
 * Horus is based on the Interplanetary File System (IPFS) and the Ethereum Blockchain. This makes it more free and censorship resistant.
-* Horus's mechanics promote unbiased and evidence-based judgment and makes malicious bot frauds useless.
+* Horus's mechanics promote unbiased and evidence-based judgment and attempt to malicious bot frauds useless.
