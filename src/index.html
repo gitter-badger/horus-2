@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=UTF-8; width=device-width, initial-scale=1;">
+    
+    <title>Horus</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="apple-touch-icon-precomposed" href="./images/favicon_mobile.png">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+
+  </head>
+  
+  <body>
+
+    <div id="header">
+      <div class="container">
+        <div id="header__title" class="col-xs-2 col-md-1">
+          <a href="./" class="link--white">horus</a>
+        </div>
+        <div id="header__message" class="col-xs-6 col-md-9">
+        </div>
+        <div class="col-xs-2 col-md-1 header__link">
+          <a class="link--toOpaque" target="_blank" href="https://lucasgleba.github.io/horus">About</a>
+        </div>
+        <div class="col-xs-2 col-md-1 header__link">
+          <a class="link--toOpaque" target="_blank" href="https://github.com/lucasgleba/horus">Contribute</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="navbar">
+      <div class="container">
+
+        <div id="navbar__hamburger" class="col-xs-3 col-sm-9 col-md-10">
+          <span class="glyphicon glyphicon-navbar__hamburger"></span>
+        </div>
+
+        <div id="navbar__buttons">
+          
+          <div class="col-xs-12 col-md-2" id="navbar__post-search">
+            <span id="post-search__icon" class="glyphicon glyphicon-search" style="font-size: 3vh"></span>
+            <input id="post-search__input" type="text" placeholder="ID">
+          </div>
+        
+          <div class="col-xs-12 col-md-2"><span id="navbar__explore" class="navbar__tab" style="font-weight: bold;">Explore</span></div>
+          <div class="col-xs-12 col-md-2"><span id="navbar__posts" class="navbar__tab">Posts</span></div>
+          <div class="col-xs-12 col-md-2"><span id="navbar__votes" class="navbar__tab">Votes</span></div>
+          <div class="col-xs-12 col-md-2"><span id="navbar__pins" class="navbar__tab">Pins</span></div>
+        
+        </div>
+
+        <div id="navbar__reputation-and-refresh" class="col-xs-9 col-sm-3 col-md-2">
+          <button id="reputation-and-refresh__refresh-btn" class="btn glyphicon glyphicon-refresh"></button>
+          <b><span id="reputation-and-refresh__reputation" title="0.000">0000</span></b>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="writing-block" style="display: none;">
+      <div class="container">
+        <span id="writing-block__pointTo-label" class="writing-block__label" style="display: none;">Point to: <span id="writing-block__pointTo-ID-label">0</span> <span id="writing-block__pointTo-remove" class="glyphicon glyphicon-remove"></span><br></span>
+        <span id="post-title" class="writing-block__label">Title: <input id="writing-block__title-input" type="text" class="bright" placeholder="____"></span>
+        <textarea id="writing-block__post-text" class="bright" placeholder="Write something..." rows="6"></textarea>
+        <button id="writing-block__post-btn" class="btn bright btn--border-toColor">
+          <span>Post</span>
+          <div id="btn-post__loader" style="display: none;" class="loader-sm center-block"></div>
+        </button>
+        <br/>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <div id="posts-block"></div>
+        <div id="content__loader" class="loader center-block"></div>
+      </div>
+    </div>
+
+    <footer class="dark">
+      <div class="container">
+        <div id="footer__logo" class="col-xs-12 col-sm-4 col-md-3">
+          <a href="./" class="link--white">horus</a>
+        </div>
+        <div id="footer__links" class="col-xs-12 col-sm-8 col-md-9">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a href="https://github.com/lucasgleba/horus" target="_blank" class="link--toColor">Horus on Github</a><br>
+            <a href="https://lucasgleba.github.io" target="_blank" class="link--toColor">About Horus</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a href="https://lucasgleba.github.io" target="_blank" class="link--toColor">About me</a><br>
+            <a href="https://twitter.com/LucasGleba" target="_blank" class="link--toColor">Twitter</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a href="https://lucasgleba.github.io/horus" target="_blank" class="link--toColor">Our sponsors</a><br>
+            <a href="https://lucasgleba.github.io#contact" target="_blank" class="link--toColor">Become a sponsor</a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <a href="https://github.com/lucasgleba/horus" target="_blank" class="link--toColor">Horus in other languages</a><br>
+            <a href="https://github.com/lucasgleba/horus/blob/master/LICENSE" target="_blank" class="link--toColor">GPL-3</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js"
+            integrity="sha384-5bXRcW9kyxxnSMbOoHzraqa7Z0PQWIao+cgeg327zit1hz5LZCEbIMx/LWKPReuB"
+            crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/bs58.js"></script>
+    <script src="js/buffer.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "horus",
+  "version": "0.1.0",
+  "description": "A non-proﬁt, censorship-resistant, truth-centered, open-source platform for the discussion of facts owned and operated by its users. Based on the IPFS and the Ethereum blockchain.",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Gleba Puig",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
