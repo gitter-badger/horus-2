@@ -82,7 +82,7 @@ App = {
       $(document).on('click', 'span#withdrawReputation', App.withdrawReputation);
       $(document).on('focusin change keyup mouseup paste', 'input.voting-block__shares-input', App.handleShares);
 
-      $(document).on('click', 'span.glyphicon-navbar__hamburger', function() { $('div#navbar__buttons').slideToggle(250) });
+      $(document).on('click', 'span.glyphicon-menu-hamburger', function() { $('div#navbar__buttons').slideToggle(250) });
       $(document).on('click', 'button.point-direction__inFavor-btn', function() { App.inFavor = true; App.pointTo(); App.toggleDirectionMenu() });
       $(document).on('click', 'button.point-direction__against-btn', function() { App.inFavor = false; App.pointTo(); App.toggleDirectionMenu() });
       
