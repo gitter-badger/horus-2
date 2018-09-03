@@ -1,6 +1,9 @@
 <div align="center"><img src="./miscellaneous/logo/logo_mid_hor_wht.png"><br></div>
  
 ### A non-profit, decentralized, open-source platform for the discussion of facts owned and operated by its users.
+
+[![Join the chat at https://gitter.im/horus_ethereum/Lobby](https://badges.gitter.im/horus_ethereum/Lobby.svg)](https://gitter.im/horus_ethereum/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Click-driven monetization, along with other factors, seems to be creating economic incentives for media companies to consider honesty and unbiased accuracy irrelevant. This makes misinformation viral, putting people under sensationalistic enslavement.
  
  **Horus's goal is to help people filter the truth out of uncertainty.**
